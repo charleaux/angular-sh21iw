@@ -1,6 +1,6 @@
-<mat-slider aria-label="unit(s)"></mat-slider>
-
-
-<!-- Copyright 2021 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license -->
+<div class="container">
+    <button mat-button (click)="isVisible = !isVisible">Toggle Visible</button>
+    <mat-slider *ngIf="isVisible" [min]="minValue" [max]="maxValue" [step]="stepValue" [thumbLabel]="true"
+        [tickInterval]="1"></mat-slider>
+    <div style="color: #0089D6; font-size: 13px; font-weight: 500;">This is a sample text.</div>
+</div>
